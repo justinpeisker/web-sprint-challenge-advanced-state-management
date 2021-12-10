@@ -27,10 +27,13 @@ const reducer = (state= initialState, action) => {
             })
         case ADD_SMURF:
             const newSmurf = {
-                name: '',
-                nickname: '',
-                position: '',
-                description: '',
+                // name: state.name,
+                // nickname: '',
+                // position: '',
+                // description: '',
+                // name: '',
+                // nickname: '',
+                ...action.payload,
                 id: Date.now()
             };
             return({
@@ -40,7 +43,7 @@ const reducer = (state= initialState, action) => {
         case SET_ERROR:
             return({
                 ...state,
-                errorMessage: ""
+                errorMessage: action.payload
             })
         default:
             return state;
