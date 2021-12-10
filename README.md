@@ -121,7 +121,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
   Reducers- The reducer is what updates state.  It receives information from the action and based on type and payload(optional) it will update state accordingly.
 
-  Store- The store is the place where application state is 'stored'.  It is an object and is know as the 'single source of truth' because it is storing immutable application state.
+  Store- The store is the place where state is 'stored'.  It is an object and is know as the 'single source of truth' because it is storing immutable state.
 
 3. What does `redux-thunk` allow us to do? How does it change our `action-creators`?
 
