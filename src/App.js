@@ -7,11 +7,11 @@ import {fetchSmurfs} from './actions';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
-const App = ()=> {
+const App = (props)=> {
 
- useEffect(() => {{
-   fetchSmurfs();
- }})
+ useEffect(() => {
+   props.fetchSmurfs();
+ }, [])
 
   return (
     <div className="App">
